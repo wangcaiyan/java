@@ -2,6 +2,7 @@ package effectivejava;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
@@ -49,6 +50,7 @@ public class VarargT {
 		objects[0] = intList; // heap pullution:将List<Integer>放入List<String>
 		String s = stringLists[0].get(0); // classCastException:java.lang.Integer cannot be cast to java.lang.String
 		System.out.println(s);
+		
 	}
 	
 	
